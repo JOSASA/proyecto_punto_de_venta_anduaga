@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proyecto_punto_de_venta.Forms
 {
-    public partial class FormCustomers : Form
+    public partial class frmProductos : Form
     {
-        public FormCustomers()
+        public frmProductos()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace proyecto_punto_de_venta.Forms
 {
-    partial class FormOrders
+    partial class frmClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,22 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(352, 203);
+            label1.Location = new Point(312, 143);
             label1.Name = "label1";
-            label1.Size = new Size(65, 20);
+            label1.Size = new Size(64, 15);
             label1.TabIndex = 0;
-            label1.Text = "ORDERS";
+            label1.Text = "Customers";
             // 
-            // FormOrders
+            // frmClientes
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(label1);
-            Name = "FormOrders";
-            Text = "FormOrders";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frmClientes";
+            Text = "FrmClientes";
+            Load += frmClientes_Load;
             ResumeLayout(false);
             PerformLayout();
         }

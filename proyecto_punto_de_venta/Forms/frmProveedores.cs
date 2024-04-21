@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace proyecto_punto_de_venta.Forms
 {
-    public partial class FormOrders : Form
+    public partial class frmProveedores : Form
     {
-        public FormOrders()
+        public frmProveedores()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

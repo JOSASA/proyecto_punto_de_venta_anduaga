@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proyecto_punto_de_venta.Forms
 {
-    public partial class formProducts : Form
+    public partial class frmUsuarios : Form
     {
-        public formProducts()
+        public frmUsuarios()
         {
             InitializeComponent();
             LoadTheme();

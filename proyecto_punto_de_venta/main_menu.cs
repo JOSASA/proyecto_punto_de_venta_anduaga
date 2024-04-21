@@ -37,7 +37,7 @@ namespace proyecto_punto_de_venta
         private void fmr_principal_Load(object sender, EventArgs e)
         {
             //Declaraciones, variables
-           
+
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -105,37 +105,37 @@ namespace proyecto_punto_de_venta
             this.panelDesktopPane.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblTitle.Text = childForm.Text.Substring(4);
+            lblTitle.Text = childForm.Text.Substring(3);
         }
         //Mis botones
-        private void btnProducts_Click(object sender, EventArgs e)
+        private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.formProducts(), sender);
+            OpenChildForm(new Forms.frmUsuarios(), sender);
         }
 
-        private void btnShoppingList_Click(object sender, EventArgs e)
+        private void btnProveedores_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormOrders(), sender);
+            OpenChildForm(new Forms.frmProveedores(), sender);
         }
 
-        private void btnCustomer_Click(object sender, EventArgs e)
+        private void btnClientes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormCustomers(), sender);
+            OpenChildForm(new Forms.frmClientes(), sender);
         }
 
-        private void btnReporting_Click(object sender, EventArgs e)
+        private void btnProductos_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormReporting(), sender);
+            OpenChildForm(new Forms.frmProductos(), sender);
         }
 
-        private void btnNotifications_Click(object sender, EventArgs e)
+        private void btnCompras_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormNotifications(), sender);
+            OpenChildForm(new Forms.frmCompras(), sender);
         }
 
-        private void btnSettings_Click(object sender, EventArgs e)
+        private void btnConfiguraciones_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormSetting(), sender);
+            OpenChildForm(new Forms.frmConfiguraciones(), sender);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -168,6 +168,26 @@ namespace proyecto_punto_de_venta
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.frmVentas(), sender);
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.frmInventario(), sender);
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void main_menu_Load(object sender, EventArgs e)
+        {
+
         }
 
         /* private void btnMaximize_Click_1(object sender, EventArgs e)

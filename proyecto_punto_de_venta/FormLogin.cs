@@ -15,7 +15,7 @@ namespace proyecto_punto_de_venta
     {
         public FormLogin()
         {
-            
+
             InitializeComponent();
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -35,10 +35,10 @@ namespace proyecto_punto_de_venta
                 {
                     this.Close();
                     //ingresa en el sistema
-                 //   main_menu main_Menu = new main_menu();
-                 //   main_Menu.Show();
+                    //   main_menu main_Menu = new main_menu();
+                    //   main_Menu.Show();
                     //los permisos del usuario que hizo login 
-                    
+
 
                 }
                 else
@@ -52,6 +52,16 @@ namespace proyecto_punto_de_venta
             {
                 Console.WriteLine("[btnIngresar_Click] " + ex.Message);
             }
+        }
+
+        private void labelUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassw.PasswordChar = checkBox1.Checked ? '\0' : '*';
         }
     }
 }

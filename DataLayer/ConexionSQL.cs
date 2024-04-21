@@ -11,10 +11,10 @@ namespace DataLayer
     internal class ConexionSQL
     {
         SqlConnection conn;
-        String nombreServidor = "LAPTOP-E87U5309\\SAMUEL2_S_G";
+        String nombreServidor = "DESKTOP-JTV8M7M\\SQLMEXI";
         String nombreBD = "POS";
-        String usuarioBD = "sa";
-        String passwordBD = "12345";
+        String usuarioBD = "mexi";
+        String passwordBD = "1234";
         private String ConnectionString;
 
         public ConexionSQL()

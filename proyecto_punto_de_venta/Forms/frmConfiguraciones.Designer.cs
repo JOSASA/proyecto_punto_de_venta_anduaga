@@ -1,6 +1,6 @@
 ﻿namespace proyecto_punto_de_venta.Forms
 {
-    partial class FormReporting
+    partial class frmConfiguraciones
     {
         /// <summary>
         /// Required designer variable.
@@ -34,20 +34,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(355, 210);
+            label1.Location = new Point(278, 136);
             label1.Name = "label1";
-            label1.Size = new Size(75, 20);
+            label1.Size = new Size(44, 15);
             label1.TabIndex = 0;
-            label1.Text = "Reporting";
+            label1.Text = "Setting";
             // 
-            // FormReporting
+            // frmConfiguraciones
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(607, 452);
             Controls.Add(label1);
-            Name = "FormReporting";
-            Text = "FormCustoming";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frmConfiguraciones";
+            Text = "frmConfiguraciones";
             ResumeLayout(false);
             PerformLayout();
         }

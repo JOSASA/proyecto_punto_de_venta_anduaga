@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace proyecto_punto_de_venta.Forms
 {
-    public partial class FormNotifications : Form
+    public partial class frmClientes : Form
     {
-        public FormNotifications()
+        public frmClientes()
         {
             InitializeComponent();
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

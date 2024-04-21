@@ -22,7 +22,7 @@ namespace DataLayer
                 comandoSQL.Connection = connSQL.AbrirConexion();
 
                 //Enviar nombre de recursos sql
-                comandoSQL.CommandText = "proc_InsertarUsuario";
+                comandoSQL.CommandText = "proc_InsertarUsuarioo";
 
                 //Tipo de comando
                 comandoSQL.CommandType = System.Data.CommandType.StoredProcedure;
@@ -67,13 +67,13 @@ namespace DataLayer
                 comandoSQL.Connection = connSQL.AbrirConexion();
 
                 //Enviar nombre de recursos sql
-                comandoSQL.CommandText = "proc_ValidaUsuario";
+                comandoSQL.CommandText = "proc_ValidaUsuarioo";
 
                 //Tipo de comando
                 comandoSQL.CommandType = System.Data.CommandType.StoredProcedure;
 
                 //Agregar parametro
-                comandoSQL.Parameters.AddWithValue("@usuario", usuario);
+                comandoSQL.Parameters.AddWithValue("@user", usuario);
                 comandoSQL.Parameters.AddWithValue("@pwd", password);
 
                 //Ejecutar query
