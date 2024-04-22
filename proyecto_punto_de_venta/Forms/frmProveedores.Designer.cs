@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProveedores));
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -49,13 +49,27 @@
             panel1.Size = new Size(700, 32);
             panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // button3
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 97);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(700, 244);
-            dataGridView1.TabIndex = 1;
+            button3.Image = Properties.Resources.icons8_eliminar_16;
+            button3.Location = new Point(382, 0);
+            button3.Name = "button3";
+            button3.Size = new Size(168, 32);
+            button3.TabIndex = 2;
+            button3.Text = "Eliminar Proveedor";
+            button3.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Image = Properties.Resources.icons8_installing_updates_16;
+            button2.Location = new Point(192, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(168, 32);
+            button2.TabIndex = 1;
+            button2.Text = "Modificar Proveedor";
+            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -70,23 +84,13 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
+            // dataGridView1
             // 
-            button2.Location = new Point(192, 0);
-            button2.Name = "button2";
-            button2.Size = new Size(168, 32);
-            button2.TabIndex = 1;
-            button2.Text = "Modificar Proveedor";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(382, 0);
-            button3.Name = "button3";
-            button3.Size = new Size(168, 32);
-            button3.TabIndex = 2;
-            button3.Text = "Eliminar Proveedor";
-            button3.UseVisualStyleBackColor = true;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(0, 97);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(700, 244);
+            dataGridView1.TabIndex = 1;
             // 
             // frmProveedores
             // 
