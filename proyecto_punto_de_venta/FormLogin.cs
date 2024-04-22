@@ -33,10 +33,18 @@ namespace proyecto_punto_de_venta
 
                 if (mUsuarios.fnValidaLogin())
                 {
+<<<<<<< HEAD
+                    
+                    //ingresa en el sistema
+                    main_menu main_Menu = new main_menu();
+                    main_Menu.ShowDialog();
+                    this.Close();
+=======
                     this.Close();
                     //ingresa en el sistema
                     //   main_menu main_Menu = new main_menu();
                     //   main_Menu.Show();
+>>>>>>> d4426edcdbd9c6daa9aa077ccc6d906a28619487
                     //los permisos del usuario que hizo login 
 
 

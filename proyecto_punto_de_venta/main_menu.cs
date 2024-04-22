@@ -15,18 +15,20 @@ namespace proyecto_punto_de_venta
         public main_menu()
         {
             InitializeComponent();
-            random = new Random();
             btnCloseChildForm.Visible = false;
             this.Text = string.Empty;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+
+        private void main_menu_Load(object sender, EventArgs e)
+        {
             try
             {
-                FormLogin login = new FormLogin();
-                login.ShowDialog();
-
-                //  this.Text = this.Text + "--> UserName: " + Utilerias.G_Usuario + " Nombre: [" + Utilerias.G_NombreUsuario + "]";
-
+                //FormLogin login = new FormLogin();
+                //login.ShowDialog();
+                //this.Close();
+                //this.Text = this.Text + "--> UserName: " + Utilerias.G_Usuario + " Nombre: [" + Utilerias.G_NombreUsuario + "]";
             }
             catch (Exception ex)
             {
@@ -34,11 +36,14 @@ namespace proyecto_punto_de_venta
             }
         }
 
+<<<<<<< HEAD
+=======
         private void fmr_principal_Load(object sender, EventArgs e)
         {
             //Declaraciones, variables
 
         }
+>>>>>>> d4426edcdbd9c6daa9aa077ccc6d906a28619487
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -92,7 +97,7 @@ namespace proyecto_punto_de_venta
             }
         }
 
-        private void OpenChildForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -135,7 +140,11 @@ namespace proyecto_punto_de_venta
 
         private void btnConfiguraciones_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            OpenChildForm(new Forms.FormConfiguraciones(), sender);
+=======
             OpenChildForm(new Forms.frmConfiguraciones(), sender);
+>>>>>>> d4426edcdbd9c6daa9aa077ccc6d906a28619487
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -170,6 +179,9 @@ namespace proyecto_punto_de_venta
             Application.Exit();
         }
 
+<<<<<<< HEAD
+        private void pictureBox1_Click(object sender, EventArgs e)
+=======
         private void btnVentas_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.frmVentas(), sender);
@@ -181,14 +193,19 @@ namespace proyecto_punto_de_venta
         }
 
         private void lblTitle_Click(object sender, EventArgs e)
+>>>>>>> d4426edcdbd9c6daa9aa077ccc6d906a28619487
         {
 
         }
 
+<<<<<<< HEAD
+
+=======
         private void main_menu_Load(object sender, EventArgs e)
         {
 
         }
+>>>>>>> d4426edcdbd9c6daa9aa077ccc6d906a28619487
 
         /* private void btnMaximize_Click_1(object sender, EventArgs e)
          {

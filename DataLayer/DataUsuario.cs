@@ -57,18 +57,20 @@ namespace DataLayer
 
 
         }
-        public void Auntenticar( String usuario, String password)
+        public void Auntenticar(String usuario, String password)
         {
             try
             {
 
-
                 //Abrir conexion
                 comandoSQL.Connection = connSQL.AbrirConexion();
-
                 //Enviar nombre de recursos sql
+<<<<<<< HEAD
+                comandoSQL.CommandText = "proc_ValidaUsuario";
+=======
                 comandoSQL.CommandText = "proc_ValidaUsuarioo";
 
+>>>>>>> d4426edcdbd9c6daa9aa077ccc6d906a28619487
                 //Tipo de comando
                 comandoSQL.CommandType = System.Data.CommandType.StoredProcedure;
 

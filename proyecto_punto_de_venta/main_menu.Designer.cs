@@ -345,12 +345,20 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+<<<<<<< HEAD
+            pictureBox1.Location = new Point(60, 0);
+            pictureBox1.Margin = new Padding(0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(913, 604);
+=======
             pictureBox1.Location = new Point(3, 2);
             pictureBox1.Margin = new Padding(0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(884, 453);
+>>>>>>> d4426edcdbd9c6daa9aa077ccc6d906a28619487
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // main_menu
             // 

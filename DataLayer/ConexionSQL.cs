@@ -13,8 +13,8 @@ namespace DataLayer
         SqlConnection conn;
         String nombreServidor = "DESKTOP-JTV8M7M\\SQLMEXI";
         String nombreBD = "POS";
-        String usuarioBD = "mexi";
-        String passwordBD = "1234";
+        String usuarioBD = "sa";
+        String passwordBD = "12345";
         private String ConnectionString;
 
         public ConexionSQL()

@@ -29,9 +29,7 @@ namespace BussinesRules
             try
             {
                 Boolean resultado = false;
-                
-
-
+   
                 //Recoger datos del login
                 DataUsuario mUsuario = new DataUsuario();
                 mUsuario.Auntenticar(usuario, pwd);
@@ -43,8 +41,7 @@ namespace BussinesRules
                     Utilerias.G_Usuario = mUsuario.UserName;
                 }
                 else
-                {
-                    
+                {    
                     resultado = false;
                     Utilerias.G_NombreUsuario = "";
                     Utilerias.G_Usuario = "";
